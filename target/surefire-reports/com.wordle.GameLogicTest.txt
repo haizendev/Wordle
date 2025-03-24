@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.wordle.GameLogicTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! - in com.wordle.GameLogicTest
+com.wordle.GameLogicTest.checkGuess_SomeWrongPositions_ReturnsMixedResult  Time elapsed: 0.007 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+All letters correct but wrong positions (1 failure)
+	org.opentest4j.AssertionFailedError: expected: <WRONG_POSITION> but was: <CORRECT>
+	at com.wordle.GameLogicTest.checkGuess_SomeWrongPositions_ReturnsMixedResult(GameLogicTest.java:59)
+
+com.wordle.GameLogicTest.checkGuess_AllWrongLetters_ReturnsIncorrectResult  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+All letters should be incorrect (2 failures)
+	org.opentest4j.AssertionFailedError: expected: <INCORRECT> but was: <WRONG_POSITION>
+	org.opentest4j.AssertionFailedError: expected: <INCORRECT> but was: <CORRECT>
+	at com.wordle.GameLogicTest.checkGuess_AllWrongLetters_ReturnsIncorrectResult(GameLogicTest.java:33)
+
