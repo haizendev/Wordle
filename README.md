@@ -29,7 +29,7 @@ src/
 │       └── WordUtils.java
 └── test/java/fr/haizen/wordle/
     ├── GameLogicTest.java
-    └── WordUtilsTest.java  // renommé pour matcher avec WordUtils
+    └── WordUtilsTest.java
 
 ```
 
@@ -67,7 +67,7 @@ Test coverage is maintained above 70% as required.
 
 ## Implementation Details
 
-### WordValidator
+### WordUtils
 
 - Validates 5-letter words
 - Ensures only alphabetic characters
